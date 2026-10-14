@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { content as c } from './content.js';
 import './App.css';
 import { Sprite, World, Npc } from './PixelArt.jsx';
+import ribbonImage from './assets/ribbon.png';
+
 const refusal = [
   '흥!!!',
   '마우스 고장인가요? 다시 확인하세요!',
@@ -446,22 +448,21 @@ export default function App() {
                     aria-label="선물 상자 열기"
                     onClick={() => setOpened(true)}
                   >
-                    <Sprite name="chest" className="reward-chest" />
-                  </button>
+              <img
+                src="/chest.svg"
+                className="sprite reward-chest"
+                alt="선물 상자"
+              />                  </button>
                   <div className="fine">상자를 눌러 열어보세요 ↗</div>
                 </>
               ) : (
                 <div className="gift-result">
                   <Confetti />
-                  {c.gift.image ? (
-                    <img
-                      className="gift-photo"
-                      src={c.gift.image}
-                      alt="준비한 생일 선물"
-                    />
-                  ) : (
-                    <Sprite name="chest" className="reward-chest" />
-                  )}
+                  <img
+                    className="gift-photo"
+                    src={ribbonImage}
+                    alt="선물은 바로 나 🎀"
+                  />  
                   <h3>{c.gift.title}</h3>
                   <p style={{ whiteSpace: 'pre-line' }}>{c.gift.message}</p>
                   <div className="signature">FROM. {c.author} ♡</div>
