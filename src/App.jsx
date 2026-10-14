@@ -319,7 +319,7 @@ export default function App() {
               </div>
               <div className="center">
                 <button className="primary" onClick={() => go(4)}>
-                  소개 잘 들었습니다. 다음! →
+                  담에 더 열심히 추억북 만들어보께ㅜ →
                 </button>
               </div>
             </>

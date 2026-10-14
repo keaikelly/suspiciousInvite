@@ -1,3 +1,6 @@
+import memory1 from './assets/1.JPG';
+import memory2 from './assets/2.jpeg';
+
 export const content = {
   demo: true,
   author: '가여니',
@@ -21,9 +24,8 @@ export const content = {
     },
   ],
   memories: [
-    { src: '', icon: '🌷', caption: '처음이라 더 기억나는 날' },
-    { src: '', icon: '🎡', caption: '별거 안 해도 웃겼던 날' },
-    { src: '', icon: '🌅', caption: '다음 장면도 같이 만들자' },
+    { src: memory1, icon: '🌷', caption: '사귀고 첫 인생네컷ㅎ' },
+    { src: memory2, icon: '🎡', caption: '첫 해외여행 후쿠오카~!!!' },
   ], // 사진은 public/photos에 넣고 src: '/photos/파일명.jpg'
   questions: [
     {
